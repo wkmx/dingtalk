@@ -43,7 +43,7 @@ func (d *DingTalk) sendMessage(msg iDingMsg) error {
 		resp   *http.Response
 		err    error
 	)
-	ctx, cancel = context.WithTimeout(context.Background(), time.Second*10)
+	ctx, cancel = context.WithTimeout(context.Background(), time.Second*20)
 	defer cancel()
 
 	value := url.Values{}
